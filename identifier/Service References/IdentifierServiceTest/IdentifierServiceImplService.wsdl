@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.identifier.behdad.bis.misc.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="com.misc.bis.behdad.service" name="IdentifierServiceImplService" targetNamespace="http://service.identifier.behdad.bis.misc.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="com.misc.bis.behdad.service" location="https://85.133.186.11:8324/behdad2/identifierservice?wsdl=IdentifierService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="IdentifierServiceImplServiceSoapBinding" type="ns1:IdentifierService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="isVerhoeff">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="isVerhoeff">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="isVerhoeffResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PasswordIsNotStrongException">
+        <soap:fault use="literal" name="PasswordIsNotStrongException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToAuthenticateException">
+        <soap:fault use="literal" name="UnableToAuthenticateException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidIdentifierException">
+        <soap:fault use="literal" name="InvalidIdentifierException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCredentialException">
+        <soap:fault use="literal" name="InvalidCredentialException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserTemporarilySuspendedException">
+        <soap:fault use="literal" name="UserTemporarilySuspendedException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addIdentifiers">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="addIdentifiers">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="addIdentifiersResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PasswordIsNotStrongException">
+        <soap:fault use="literal" name="PasswordIsNotStrongException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToAuthenticateException">
+        <soap:fault use="literal" name="UnableToAuthenticateException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCredentialException">
+        <soap:fault use="literal" name="InvalidCredentialException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserTemporarilySuspendedException">
+        <soap:fault use="literal" name="UserTemporarilySuspendedException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="generateIdentifier">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="generateIdentifier">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="generateIdentifierResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidAllotmentItemInfoException">
+        <soap:fault use="literal" name="InvalidAllotmentItemInfoException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="PasswordIsNotStrongException">
+        <soap:fault use="literal" name="PasswordIsNotStrongException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToAuthenticateException">
+        <soap:fault use="literal" name="UnableToAuthenticateException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCredentialException">
+        <soap:fault use="literal" name="InvalidCredentialException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToGenerateIdentifierException">
+        <soap:fault use="literal" name="UnableToGenerateIdentifierException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserTemporarilySuspendedException">
+        <soap:fault use="literal" name="UserTemporarilySuspendedException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="removeIdentifiers">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="removeIdentifiers">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="removeIdentifiersResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PasswordIsNotStrongException">
+        <soap:fault use="literal" name="PasswordIsNotStrongException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToAuthenticateException">
+        <soap:fault use="literal" name="UnableToAuthenticateException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCredentialException">
+        <soap:fault use="literal" name="InvalidCredentialException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserTemporarilySuspendedException">
+        <soap:fault use="literal" name="UserTemporarilySuspendedException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getActiveIdentifiers">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getActiveIdentifiers">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getActiveIdentifiersResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PasswordIsNotStrongException">
+        <soap:fault use="literal" name="PasswordIsNotStrongException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToAuthenticateException">
+        <soap:fault use="literal" name="UnableToAuthenticateException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCredentialException">
+        <soap:fault use="literal" name="InvalidCredentialException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserTemporarilySuspendedException">
+        <soap:fault use="literal" name="UserTemporarilySuspendedException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isValidIdentifier">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="isValidIdentifier">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="isValidIdentifierResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PasswordIsNotStrongException">
+        <soap:fault use="literal" name="PasswordIsNotStrongException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToAuthenticateException">
+        <soap:fault use="literal" name="UnableToAuthenticateException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCredentialException">
+        <soap:fault use="literal" name="InvalidCredentialException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserTemporarilySuspendedException">
+        <soap:fault use="literal" name="UserTemporarilySuspendedException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addIdentifier">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="addIdentifier">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="addIdentifierResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidDateException">
+        <soap:fault use="literal" name="InvalidDateException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidIdentifierCodeException">
+        <soap:fault use="literal" name="InvalidIdentifierCodeException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="PasswordIsNotStrongException">
+        <soap:fault use="literal" name="PasswordIsNotStrongException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidAmountException">
+        <soap:fault use="literal" name="InvalidAmountException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToAuthenticateException">
+        <soap:fault use="literal" name="UnableToAuthenticateException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCredentialException">
+        <soap:fault use="literal" name="InvalidCredentialException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidAccountNumberException">
+        <soap:fault use="literal" name="InvalidAccountNumberException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="IdentifierIsExistException">
+        <soap:fault use="literal" name="IdentifierIsExistException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserTemporarilySuspendedException">
+        <soap:fault use="literal" name="UserTemporarilySuspendedException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="generateIdentifierByOrganInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="generateIdentifierByOrganInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="generateIdentifierByOrganInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidAllotmentItemInfoException">
+        <soap:fault use="literal" name="InvalidAllotmentItemInfoException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="PasswordIsNotStrongException">
+        <soap:fault use="literal" name="PasswordIsNotStrongException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToAuthenticateException">
+        <soap:fault use="literal" name="UnableToAuthenticateException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCredentialException">
+        <soap:fault use="literal" name="InvalidCredentialException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToGenerateIdentifierException">
+        <soap:fault use="literal" name="UnableToGenerateIdentifierException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserTemporarilySuspendedException">
+        <soap:fault use="literal" name="UserTemporarilySuspendedException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isEffectiveIdentifier">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="isEffectiveIdentifier">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="isEffectiveIdentifierResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PasswordIsNotStrongException">
+        <soap:fault use="literal" name="PasswordIsNotStrongException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToAuthenticateException">
+        <soap:fault use="literal" name="UnableToAuthenticateException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCredentialException">
+        <soap:fault use="literal" name="InvalidCredentialException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="IdentifierNotFoundException">
+        <soap:fault use="literal" name="IdentifierNotFoundException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserTemporarilySuspendedException">
+        <soap:fault use="literal" name="UserTemporarilySuspendedException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isExistIdentifier">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="isExistIdentifier">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="isExistIdentifierResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PasswordIsNotStrongException">
+        <soap:fault use="literal" name="PasswordIsNotStrongException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToAuthenticateException">
+        <soap:fault use="literal" name="UnableToAuthenticateException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCredentialException">
+        <soap:fault use="literal" name="InvalidCredentialException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserTemporarilySuspendedException">
+        <soap:fault use="literal" name="UserTemporarilySuspendedException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="removeIdentifier">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="removeIdentifier">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="removeIdentifierResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PasswordIsNotStrongException">
+        <soap:fault use="literal" name="PasswordIsNotStrongException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnableToAuthenticateException">
+        <soap:fault use="literal" name="UnableToAuthenticateException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCredentialException">
+        <soap:fault use="literal" name="InvalidCredentialException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="IdentifierNotFoundException">
+        <soap:fault use="literal" name="IdentifierNotFoundException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserTemporarilySuspendedException">
+        <soap:fault use="literal" name="UserTemporarilySuspendedException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IdentifierServiceImplService">
+    <wsdl:port name="IdentifierServiceImplPort" binding="tns:IdentifierServiceImplServiceSoapBinding">
+      <soap:address location="https://85.133.186.11:8324/behdad2/identifierservice" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

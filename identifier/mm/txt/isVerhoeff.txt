@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="com.misc.bis.behdad.service">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <com:isVerhoeff>
+         <!--Optional:-->
+         <identifierCode>37</identifierCode>
+         <!--Optional:-->
+         <amount></amount>
+      </com:isVerhoeff>
+   </soapenv:Body>
+</soapenv:Envelope>

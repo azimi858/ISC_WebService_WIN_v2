@@ -1,0 +1,18 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="com.misc.bis.behdad.service">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <com:removeIdentifier>
+         <!--Optional:-->
+         <arg0>
+            <!--Optional:-->
+            <password>?</password>
+            <!--Optional:-->
+            <username>?</username>
+         </arg0>
+         <!--Optional:-->
+         <identifierCode>?</identifierCode>
+         <!--Optional:-->
+         <accountNumber>?</accountNumber>
+      </com:removeIdentifier>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,22 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="com.misc.bis.behdad.service">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <com:generateIdentifier>
+         <!--Optional:-->
+         <arg0>
+            <!--Optional:-->
+            <baseCode>?</baseCode>
+            <!--Optional:-->
+            <identifierPrefix>?</identifierPrefix>
+            <!--Optional:-->
+            <incomeIndexCode>?</incomeIndexCode>
+            <!--Optional:-->
+            <incomeSubsidiaryCode>?</incomeSubsidiaryCode>
+            <!--Optional:-->
+            <organCustomCode>?</organCustomCode>
+         </arg0>
+         <!--Optional:-->
+         <amount>?</amount>
+      </com:generateIdentifier>
+   </soapenv:Body>
+</soapenv:Envelope>

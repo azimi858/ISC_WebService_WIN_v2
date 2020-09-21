@@ -1,0 +1,57 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="com.misc.bis.behdad.service">
+<soapenv:Header/>
+<soapenv:Body>
+<com:addIdentifiers>
+<!--Optional:-->
+<arg0>
+ <!--Optional:-->
+<password>4001058906376834</password>
+<!--Optional:-->
+<username>4001058906376834</username>
+</arg0>
+ <!--Optional:-->
+<arg1>
+ <!--Optional:-->
+<accountNumber>4001058906376834</accountNumber>
+<!--Zero or more repetitions:-->
+
+<identifierAmountPairList>
+ <!--Optional:-->
+<amount></amount>
+<!--Optional:-->
+<identifier>921288240112345678211219200413
+</identifier>
+</identifierAmountPairList>
+<!--Optional:-->
+
+<identifierAmountPairList>
+ <!--Optional:-->
+<amount></amount>
+<!--Optional:-->
+<identifier>362222222222222222222222222222
+</identifier>
+</identifierAmountPairList>
+<!--Optional:-->
+
+<identifierAmountPairList>
+ <!--Optional:-->
+<amount></amount>
+<!--Optional:-->
+<identifier>300333333333333333333333333333
+</identifier>
+</identifierAmountPairList>
+<!--Optional:-->
+
+<identifierAmountPairList>
+ <!--Optional:-->
+<amount></amount>
+<!--Optional:-->
+<identifier>355111111111111111111111111111</identifier>
+</identifierAmountPairList>
+<!--Optional:-->
+
+<toDate>14991229</toDate>
+</arg1>
+</com:addIdentifiers>
+</soapenv:Body>
+</soapenv:Envelope>
